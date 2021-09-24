@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 
 public class CelestialObject
 {
-    public int Id;
+    public int Id { get; set; }
     [Required]
-    public string Name;
-    public int OrbitedObjectId;
-    public List<CelestialObject> Satellites;
-    public TimeSpan OrbitalPeriod;
+    public string Name { get; set; }
+    public int? OrbitedObjectId { get; set; }
+    [NotMapped]
+    public List<CelestialObject> Satellites { get; set; }
+    public TimeSpan OrbitalPeriod { get; set; }
 
 
 
