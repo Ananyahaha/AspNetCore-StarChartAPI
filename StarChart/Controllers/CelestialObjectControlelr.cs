@@ -1,8 +1,5 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using StarChart.Data;
 
 namespace StarChart.Controllers
